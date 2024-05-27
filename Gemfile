@@ -76,3 +76,7 @@ gem "devise", "~> 4.9"
 gem "tailwindcss-rails", "~> 2.0"
 
 gem "devise-tailwindcssed", "~> 0.1.5"
+
+gem "ruby-openai"
+gem "sidekiq" # Make sure you also have Redis running on your machine
+              # (brew install redis)
