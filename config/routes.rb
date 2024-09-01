@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root "site#index"
+  resources :chats do
+    resources :messages
+  end
+  root "chats#new"
 end
